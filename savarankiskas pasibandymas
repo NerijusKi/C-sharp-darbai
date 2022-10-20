@@ -1,0 +1,120 @@
+using System;
+
+namespace ManoUzduotis
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //numeravimas iš anksto žinomų skaičių
+            //int[] randomNumbers = new int[] { 5, 2, 9, 8, 1, 10 };
+            //Array.Sort(randomNumbers);
+            //foreach (var item in randomNumbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            //numeravimas iš anksto žinomų skaičių kitu būdu
+            //int[] randomNumbers = new int[] { 5, 2, 9, 8, 1, 10 };
+            //for (int i = 0; i < randomNumbers.Length; i++)
+            //{
+            //    for (int x = 0; x < randomNumbers.Length; x++)
+            //    {
+            //        if(randomNumbers[i] < randomNumbers[x])
+            //        {
+            //            int temp = randomNumbers[i];
+            //            randomNumbers[i] = randomNumbers[x];
+            //            randomNumbers[x] = temp;
+            //        }
+            //    }
+            //}
+            //for (int i = 0; i < randomNumbers.Length; i++)
+            //{
+            //    Console.WriteLine(randomNumbers[i]);
+            //}
+
+            //įvedus skaičių, padaro tiek stulpelių piramidę iš žvaigždučių, koks buvo skaičius įvestas
+            //int lines = int.Parse(Console.ReadLine());
+            //int spaces = lines - 1;
+            //int stars = 1;
+            //for (int i = 0; i < lines; i++)
+            //{
+            //    for (int y = 0; y < spaces; y++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int z = 0; z < stars; z++)
+            //    {
+            //        Console.Write("* ");
+            //    }
+            //    spaces--;
+            //    stars++;
+            //    Console.WriteLine();
+            //}
+
+            //parašo apverstą piramidę iš žvaigždučių
+            //int lines = int.Parse(Console.ReadLine());
+            //int spaces = lines;
+            //int stars = 1;
+            //for (int i = 0; i < lines; i++)
+            //{
+            //    for (int y = 0; y < stars; y++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int z = 0; z < spaces; z++)
+            //    {
+            //        Console.Write("* ");
+            //    }
+
+            //    spaces--;
+            //    stars++;
+            //    Console.WriteLine();
+            //}
+
+
+            //blogai 1 dalis
+            //int lines = int.Parse(Console.ReadLine());
+            //int spaces = lines - 1;
+            //int stars = 1;
+
+            //for (int i = 0; i < lines; i++)
+            //{
+            //    for (int y = 0; y < spaces; y++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int z = 0; z < stars; z++)
+            //    {
+            //        Console.Write("* ");
+            //    }
+            //    spaces--;
+            //    stars++;
+            //    Console.WriteLine();
+            //}
+
+
+
+            ////blogai 2 dalis
+            //for (int a = 0; a < lines + 1; a++)
+            //{
+
+            //    for (int x = 0; x < spaces; x++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int q = 0; q < stars; q++)
+            //    {
+            //        Console.Write("* ");
+            //    }
+            //    spaces++;
+            //    stars--;
+            //    Console.WriteLine();
+            //}
+
+
+
+        }
+    }
+}
