@@ -114,6 +114,103 @@ namespace ManoUzduotis
             //}
 
 
+        //spalio 21d. darbas klasėje
+
+
+        //{
+        //    Console.WriteLine(DayOfWeek.Sunday);
+        //    Console.WriteLine((int)SavaitesDienos.monday);
+        //}
+        //private enum SavaitesDienos
+        //{
+        //       monday = 15,
+        //       tuesday,
+        //       wednesday,
+        //       thursday,
+        //       friday,
+        //       saturday,
+        //       sunday
+        //}
+
+
+
+        //papraso ivesti lango auksti ir ploti ir paskaiciuoja lango plota, paliekant tik du skaicius po kablelio
+
+        //{
+        //    Console.WriteLine("Lango plotis");
+        //    double plotis = double.Parse(Console.ReadLine());
+        //    Console.WriteLine("lango aukštis");
+        //    double aukstis = double.Parse(Console.ReadLine());
+        //    double plotas = plotis * aukstis;
+
+        //    double mediena = (plotis + aukstis + 0.10) * 2;
+        //    Console.WriteLine("plotas m2");
+        //    Console.WriteLine(string.Format("{0:0.00}", plotas));
+        //    Console.WriteLine("mediena m");
+        //    Console.WriteLine(string.Format("{0:0.00}", mediena));
+
+
+        //}
+
+        //nebaigtas
+        //{
+        //     Console.WriteLine( "Lango plotis");
+        //     if (int.TryParse(Console.ReadLine(), out int plotis))
+        //    {
+        //    Console.WriteLine(plotis);
+        //    }
+        //    else
+        //    { 
+        //    Console.WriteLine("neivedei skaiciaus");
+        //    }
+        //}
+
+
+
+    //blogai, issiaiskinti
+    //{
+    //    Console.WriteLine("Lango plotis");
+    //    if (int.TryParse(Console.ReadLine(), out int plotis))
+    //    {
+    //    Console.WriteLine(plotis);
+    //    }
+    //    else
+    //    { 
+    //    Console.WriteLine("neivedei skaiciaus");
+    //    }
+    //double aukstis = double.Parse(Console.ReadLine());
+    //    double plotas = plotis * aukstis;
+
+    //    double mediena = (plotis + aukstis + 0.10) * 2;
+    //    Console.WriteLine("plotas m2");
+    //    Console.WriteLine(string.Format("{0:0.00}", plotas));
+    //    Console.WriteLine("mediena m");
+    //    Console.WriteLine(string.Format("{0:0.00}", mediena));
+
+
+    //}
+
+
+
+
+    //jei neivedi skaiciaus, paraso eilute, kad neivedei
+
+    //if   (int.TryParse(Console.ReadLine(), out int sk))
+    //{
+    //    Console.WriteLine(sk);
+    //}
+    //else
+    //{
+    //    Console.WriteLine("neivedei skaiciaus");
+
+    //}
+    //int input = int.Parse(Console.ReadLine(), out sk);
+
+
+    //pavercia i toki formata, kad tik du skaiciai po kablelio
+
+    //double sk = 18.2222;
+    //Console.WriteLine(string.Format("{0:0.00}", sk));
 
         }
     }
