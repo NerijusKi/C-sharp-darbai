@@ -1,0 +1,108 @@
+//Sukuria faila txt ir uzraso jame ivesta teksta
+
+using System;
+using System.IO;
+
+namespace Lapkritis3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string filePath = @"C:\Users\moksleivis\Desktop\NerijusKi\tekstoIrasymas.txt";
+
+            try
+            {
+                Console.WriteLine("Įveskite duomenis");
+                StreamWriter writer = new StreamWriter(filePath, true);
+                writer.WriteLine(Console.ReadLine());
+                writer.Dispose();
+            }
+
+            catch (Exception)
+            {
+
+            }
+            string readText = File.ReadAllText(filePath);
+            Console.WriteLine(readText);
+
+        }
+    }
+}
+
+
+//daro ta pati, tik prideda exception, jog ivedus "5", paraso faile "gavosi"
+using System;
+using System.IO;
+
+namespace Lapkritis3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string filePath = @"C:\Users\moksleivis\Desktop\NerijusKi\tekstoIrasymas.txt";
+
+            StreamWriter writerMano = new StreamWriter(filePath, true);
+            try
+            {
+                Console.WriteLine("Įveskite duomenis");
+
+                string inputMano = Console.ReadLine();
+                if (inputMano == "5")
+                {
+                    throw new Exception();
+                }
+                writerMano.WriteLine(inputMano);
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("penki");
+                writerMano.WriteLine("gavosi");
+
+            }
+            finally
+            {
+                writerMano.Dispose();
+
+            }
+            string readText = File.ReadAllText(filePath);
+            Console.WriteLine(readText);
+
+        }
+    }
+}
+
+
+// paieska faile turint konkretu zodi
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace Lapkritis3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string filePath = @"C:\Users\moksleivis\Desktop\NerijusKi\tekstoIrasymas.txt";
+
+            List<string> paieska = new List<string>(File.ReadAllLines(filePath));
+
+            Console.Write("Iveskite kazka: ");
+            string ieskomasZodis = Console.ReadLine();
+            for (int i=0; i<paieska.Count; i++)
+            {
+                if (paieska[i].Contains(ieskomasZodis))
+                {
+                    Console.WriteLine(paieska[i]);
+                }
+            }
+        }
+    }
+}
+
+
+//
+
