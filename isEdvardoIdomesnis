@@ -126,3 +126,86 @@ namespace ConsoleApp1
         }
     }
 }
+
+
+//Lapkricio 4 program.cs
+
+using Lapkritis3;
+using System;
+using System.Collections.Generic;
+
+namespace Lapkritis4
+{
+    class Program
+    {
+        static void Main()
+        {
+            SportsCar myFerrari = new SportsCar();
+            myFerrari.Color = "juoda";
+            myFerrari.Enginesize = 3.0;
+            myFerrari.Make = "Ferari";
+            myFerrari.Model = "Spider";
+            myFerrari.WheelCount = 4;
+
+            SportsCar lambo = new SportsCar();
+            lambo.Color = "yellow";
+            lambo.Enginesize = 5;
+            lambo.Make = "Lamborghini";
+            lambo.Model = "Iris";
+            lambo.WheelCount = 4;
+
+
+        }
+    }
+}
+
+//Cars.cs
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkritis3
+//{
+//    public abstract class Cars //abstrakcia klase galima tik paveldet, bet kurti objekto negalima
+//    {
+//        private string _color = "white";
+
+//        public string Color //Properties ilgasis uzrasymas
+//        {
+//            get { return _color; }
+//            set { _color = value; }
+//        }
+
+//        public string GetColor()
+//        {
+//            return _color;
+//        }
+
+//        public abstract void Drive();
+//    }
+//}
+
+    public class Cars
+{
+    public string Color { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public int WheelCount { get; set; }
+    public double Enginesize { get; set; }
+}
+
+//SportsCar.cs
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkritis3
+{
+    class SportsCar : Cars
+    {
+        public override void Drive()
+        {
+            Console.WriteLine("I am driving");
+        }
+    }
+}
