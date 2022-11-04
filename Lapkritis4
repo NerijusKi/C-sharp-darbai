@@ -1,0 +1,121 @@
+using System;
+
+namespace Lapkrits4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Human myhuman = new Human("Vardenis");
+            //Console.WriteLine(myhuman.Name);
+            //Console.WriteLine(myhuman.Id);
+
+            Teacher myTeacher = new Teacher("Vanda");
+            Student mokinys = new Student("Aurimas");
+            mokinys.Teacher = myTeacher;
+            Console.WriteLine(mokinys.Teacher.Name);
+
+           
+            Console.WriteLine("iveskite varda");
+            string input = Console.ReadLine();
+            ITeach myTeacher = new Teacher("Simas");
+
+            Student mokinysVienas = new Student("Justas");
+            Student mokinysDu = new Student("Vilius");
+
+            mokinysVienas.Teacher = myTeacher;
+            mokinysDu.Teacher = myTeacher;
+            
+
+
+
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkrits4
+{
+    public class Human
+
+   
+    {
+        public Human(string name)
+        {
+            Name = name;
+            Id = Guid.NewGuid();            
+        }
+
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public  Guid Id { get; set; }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkrits4
+
+
+    interface IErasmusStudent
+{
+    public bool IErasmus { get; set; }
+}
+
+    public class Student : Human, IErasmusStudent
+{
+    public Student(string name)
+        : base(name)
+    {
+
+    }
+    public Guid StudentId { get; set; }
+
+    public Teacher Teacher { get; set; }
+}
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkrits4
+{
+    public class Teacher : Human, ITeach //public sealed class neleidzia sios klases paveldeti kitoms  //ITeach yra interface
+    {
+        public Teacher(string name)
+            : base(name)
+        {
+        }
+        public int RoomNumber { get; set; }
+
+        List<Student> Students { get; set; }
+    }
+
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lapkrits4
+{
+    interface ITeach
+    {
+        void TeachKids();
+
+    }
+}
